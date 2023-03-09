@@ -1,4 +1,4 @@
-# Remix/Commerce Template for Atama Composer
+# Remix + Commerce Template for Atama Composer
 A template for Atama Composer that uses Remix and can be used as a starting point for commerce sites.
 
 - [Atama Docs](https://docs.atama.co/docs/composer-studio/developer-guides/guides/remix)
