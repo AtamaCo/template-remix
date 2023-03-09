@@ -1,5 +1,7 @@
-# Welcome to Remix!
+# Next.js Marketing Template for Atama Composer
+A template for Atama Composer that uses Next.js and can be used as a starting point for simple marketing sites.
 
+- [Atama Docs](https://docs.atama.co/docs/composer-studio/developer-guides/guides/remix)
 - [Remix Docs](https://remix.run/docs)
 
 ## Development
