@@ -83,7 +83,7 @@ export function ProductsList({
 }: ProductListProps) {
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-2xl py-10 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="max-w-6xl mx-auto pb-10 px-8 lg:px-0">
         <h2 className="text-2xl font-bold tracking-tight text-gray-900">
           {title}
         </h2>

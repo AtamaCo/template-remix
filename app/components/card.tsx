@@ -25,7 +25,7 @@ export function Card({
 
   return (
     <div
-      className="flex flex-col h-full dark:border-2 dark:border-zinc-800"
+      className="flex flex-col dark:border-2 dark:border-zinc-200 rounded"
       {...atama}
     >
       <div className="card-image--top">
@@ -37,7 +37,7 @@ export function Card({
           className="object-cover w-full h-auto"
         />
       </div>
-      <div className="grid gap-4 bg-zinc-100 dark:bg-zinc-900 py-4 grow rounded-b">
+      <div className="grid gap-4 bg-zinc-100 py-4 grow rounded">
         <h2 className="text-center font-bold text-2xl px-4">{title}</h2>
         <p className="px-4">{description}</p>
         <div className="flex justify-center content-start self-end">
