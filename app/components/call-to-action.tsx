@@ -19,7 +19,7 @@ export function CallToAction({
 }: CallToActionProps) {
   return (
     <section {...atama} className="py-4">
-      <div className="flex flex-col md:flex-row gap-12 items-center py-16 md:py-24 px-12 bg-green-100 rounded">
+      <div className="flex flex-col md:flex-row gap-12 items-center px-8 py-10 bg-zinc-100 border-2 border-zinc-200 rounded">
         <div className="grow flex flex-col gap-2">
           <Heading level={4}>{title}</Heading>
           <p className="text-lg">{subtitle}</p>

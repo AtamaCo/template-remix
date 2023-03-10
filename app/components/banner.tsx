@@ -13,7 +13,6 @@ interface BannerProps {
   image: string;
   imageAlt: string;
   variant?: 'light' | 'dark';
-  contrast?: boolean;
   atama?: AtamaComponentProps;
 }
 
@@ -26,40 +25,32 @@ export function Banner({
   ctaLabel,
   ctaHref,
   variant = 'light',
-  contrast = true,
   atama,
 }: BannerProps) {
   return (
-    <section {...atama} className="py-4">
-      <div className="relative py-24 lg:py-40">
-        <Image
-          src={image}
-          alt={imageAlt}
-          className={clsx(
-            'object-cover absolute inset-0 w-full h-full rounded',
-            {
-              'contrast-50': contrast,
-            },
-          )}
-        />
-        <div className="relative">
-          <div
-            className={clsx('px-12', {
-              'text-white': variant === 'light',
-              'text-gray-900': variant === 'dark',
-            })}
-          >
-            <p className="text-lg">{subtitle}</p>
-            <div className="pt-1 pb-3">
-              <Heading level={3}>{title}</Heading>
-            </div>
-            <p className="pb-6">{description}</p>
-            {ctaLabel && ctaHref ? (
-              <div>
-                <CtaButton href={ctaHref}>{ctaLabel}</CtaButton>
-              </div>
-            ) : null}
+    <section {...atama} className="relative py-20 lg:py-28 px-8 rounded mb-4">
+      <Image
+        src={image}
+        alt={imageAlt}
+        className='object-cover absolute inset-0 w-full h-full rounded'
+      />
+      <div className="relative bg-black/40 p-10 w-full md:w-1/2">
+        <div
+          className={clsx('px-12', {
+            'text-white': variant === 'light',
+            'text-gray-900': variant === 'dark',
+          })}
+        >
+          <p className="text-sm	text-slate-300 uppercase">{subtitle}</p>
+          <div className="pt-1 pb-3">
+            <Heading level={3}>{title}</Heading>
           </div>
+          <p className="pb-6 text-slate-300">{description}</p>
+          {ctaLabel && ctaHref ? (
+            <div>
+              <CtaButton href={ctaHref}>{ctaLabel}</CtaButton>
+            </div>
+          ) : null}
         </div>
       </div>
     </section>
