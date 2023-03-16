@@ -12,7 +12,7 @@ import { AtamaClient } from '@atamaco/remix';
 export const fetcher = new FetcherAtama({
   apiKey: process.env.ATAMA_API_KEY as string,
   workspaceId: process.env.ATAMA_WORKSPACE_ID as string,
-  url: process.env.ATAMA_URL || undefined
+  url: process.env.ATAMA_API_URL || undefined
 });
 
 const ttlCache = new TTLCache({ max: 100, ttl: 300000 });
